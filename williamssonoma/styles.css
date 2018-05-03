@@ -1,0 +1,103 @@
+body {
+  position: relative;
+  margin: 0px;
+}
+
+#content {
+  background-color: white;
+}
+
+#box {
+  display: none;
+  position: fixed;
+  top: calc(50vh - 200px);
+  left: calc(50vw - 160px);
+  z-index: 100;
+  background-color: white;
+  border: 1px solid black;
+  padding: 20px;
+}
+
+#dialog-main-image-container {
+  height: 300px;
+  width: 300px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+#dialog-main-image {
+  height: 300px;
+  width: 300px;
+}
+
+.dialog-left-arrow {
+  top: 130px;
+  left: 10px;
+  position: absolute;
+  border-right: 20px solid red;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  cursor: pointer;
+}
+
+.dialog-right-arrow {
+  top: 130px;
+  right: 10px;
+  position: absolute;
+  border-left: 20px solid red;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  cursor: pointer;
+}
+
+.dialog-thumbnails {
+  min-height: 48px;
+  width: 300px;
+}
+
+.dialog-thumbnail {
+  height: 48px;
+  width: 48px;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+.page-title {
+  padding: 20px 0px 0px 0px;
+  margin: 0px 0px 20px 0px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.item {
+  margin: 0px auto 20px auto;
+  position: relative;
+  text-align: center;
+  width: 300px;
+}
+
+.item-image {
+  width: 300px;
+  cursor: pointer;
+}
+
+.item-name {
+  margin: 0px;
+  text-align: left;
+  width: 300px;
+}
+
+.prices {
+  text-align: left;
+}
+
+@media screen and (max-width: 1000px) {
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
